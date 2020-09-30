@@ -24,7 +24,7 @@ public class CustomerController {
      */
     @RequestMapping(value = "/add/queue", method = RequestMethod.GET)
     public void addQueue() {
-        Destination destination = new ActiveMQQueue("yiliQueueTest");
+        Destination destination = new ActiveMQQueue("yilipocQueueTest");
         //传入队列以及值
         activeManager.send(destination, "success");
     }
