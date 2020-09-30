@@ -101,7 +101,7 @@
     </build>
     <!-- Add Spring repositories -->
     <!-- (you don't need this if you are using a .RELEASE version) -->
-    <repositories>
+    <!--<repositories>
         <repository>
             <id>maven-snapshots</id>
             <url>http://nexus-tkn-cicd.apps.ocp4.yilipoc.com/repository/maven-snapshots/</url>
@@ -127,13 +127,13 @@
     <distributionManagement>
         <repository>
             <!-- 这里的ID要和setting的id一致 -->
-            <id>maven-releases</id>
+            <!--<id>maven-releases</id>
             <url>http://nexus-tkn-cicd.apps.ocp4.yilipoc.com/repository/maven-releases/</url>
-        </repository>
+        </repository>-->
         <!--这是打成快照版本的配置 -->
-        <snapshotRepository>
+        <!--<snapshotRepository>
             <id>maven-snapshots</id>
             <url>http://nexus-tkn-cicd.apps.ocp4.yilipoc.com/repository/maven-snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 </project>
