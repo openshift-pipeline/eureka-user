@@ -1,6 +1,6 @@
-package com.cloud.demo.eureka.user.activemq.controller;
+package org.cloud.demo.eureka.user.activemq.controller;
 
-import com.cloud.demo.eureka.user.activemq.common.ActiveManager;
+import org.cloud.demo.eureka.user.activemq.common.ActiveManager;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
