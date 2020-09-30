@@ -32,9 +32,9 @@ public class App
     public static void sender() {
     	// 连接工厂
         ConnectionFactory connectionFactory= new ActiveMQConnectionFactory(
-               "admin",
-                "admin",
-                "tcp://192.168.137.7:61616");;
+               "userp6I",
+                "2bCundFO",
+                "tcp://broker-amq-tcp.poc-java-demo:61616");;
         //JMS 客户端到JMS Provider 的连接
         //发送消息的是生产者producer mq的服务器是提供者provider 接受消息的是消费者
         Connection connection = null;
@@ -48,9 +48,9 @@ public class App
         MessageProducer producer;
         // 构造ConnectionFactory实例对象，此处采用ActiveMq的实现jar
         connectionFactory = new ActiveMQConnectionFactory(
-               "admin",
-                "admin",
-        		"tcp://192.168.137.7:61616");;
+               "userp6I",
+                "2bCundFO",
+        		"tcp://broker-amq-tcp.poc-java-demo:61616");;
         try {
             connection = connectionFactory.createConnection();
             // 启动
@@ -104,8 +104,8 @@ public class App
     public void redis() {
     	System.out.println( "Hello World!" );
         //连接本地的 Redis 服务
-          Jedis jedis = new Jedis("192.168.137.7",6003);
-          jedis.auth("123456");
+          Jedis jedis = new Jedis("redis.poc-java-demo",6379);
+          jedis.auth("LqlSuoiU6x3QQh3Y");
           System.out.println("连接成功"+jedis.get("aaa"));
           
           //查看服务是否运行

@@ -22,9 +22,9 @@ public class app1 {
         Destination destination;
         MessageConsumer consumer;
         connectionFactory = new ActiveMQConnectionFactory(
-        		"admin",
-                "admin",
-                "tcp://192.168.137.7:61616");
+        		"userp6I",
+                "2bCundFO",
+                "tcp://broker-amq-tcp.poc-java-demo:61616");
         try {
             connection = connectionFactory.createConnection();
             connection.start();

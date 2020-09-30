@@ -43,7 +43,7 @@ public class UserController {
 	public String getyyy(HttpServletRequest request, HttpServletResponse response, String callback) {
 		System.out.println( "Hello World!" );
 	      //连接本地的 Redis 服务
-	        Jedis jedis = new Jedis("redis",6379);
+	        Jedis jedis = new Jedis("redis.poc-java-demo",6379);
 	        jedis.auth("LqlSuoiU6x3QQh3Y");
 	        System.out.println(jedis.get("aaa"));
 		Map<String, Object> resultMap = new HashMap<>();
@@ -56,7 +56,7 @@ public class UserController {
 	@RequestMapping(value = "xxx", produces = "text/script;charset=UTF-8")
 	@ResponseBody
 	public String getxxx(HttpServletRequest request, HttpServletResponse response, String callback,@RequestParam("vlaue") String vlaue) {
-		Jedis jedis = new Jedis("redis",6379);
+		Jedis jedis = new Jedis("redis.poc-java-demo",6379);
         jedis.auth("LqlSuoiU6x3QQh3Y");
         System.out.println(jedis.get("aaa"));
         jedis.set("aaa", vlaue);
