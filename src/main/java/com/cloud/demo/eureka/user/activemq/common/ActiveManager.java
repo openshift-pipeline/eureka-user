@@ -1,4 +1,4 @@
-package com.cloud.demo.activemq.common;
+package com.cloud.demo.eureka.user.activemq.common;
 
 import org.apache.activemq.ScheduledMessage;
 import org.springframework.beans.factory.annotation.Autowired;

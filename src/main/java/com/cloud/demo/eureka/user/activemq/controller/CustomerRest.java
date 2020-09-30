@@ -1,4 +1,4 @@
-package com.cloud.demo.activemq.controller;
+package com.cloud.demo.eureka.user.activemq.controller;
 
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Service;
