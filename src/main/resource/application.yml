@@ -1,6 +1,13 @@
 spring:
   application:
     name: service-eureka-user #服务名称
+  activemq:
+    broker-url: tcp://broker-amq-tcp.poc-java-demo:61616
+    user: userp6I
+    password: 2bCundFO
+    in-memory: true
+    pool:
+      enabled: false
 server:
   port: 8080 #端口
 eureka:
