@@ -99,41 +99,4 @@
             </resources> -->
         <!--配置打包时不过滤非java文件结束 -->
     </build>
-    <!-- Add Spring repositories -->
-    <!-- (you don't need this if you are using a .RELEASE version) -->
-    <!--<repositories>
-        <repository>
-            <id>maven-snapshots</id>
-            <url>http://nexus-tkn-cicd.apps.ocp4.yilipoc.com/repository/maven-snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>maven-releases</id>
-            <url>http://nexus-tkn-cicd.apps.ocp4.yilipoc.com/repository/maven-releases/</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-snapshots</id>
-            <url>https://repo.spring.io/snapshot</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-milestones</id>
-            <url>https://repo.spring.io/milestone</url>
-        </pluginRepository>
-    </pluginRepositories>
-    <distributionManagement>
-        <repository>
-            <!-- 这里的ID要和setting的id一致 -->
-            <!--<id>maven-releases</id>
-            <url>http://nexus-tkn-cicd.apps.ocp4.yilipoc.com/repository/maven-releases/</url>
-        </repository>-->
-        <!--这是打成快照版本的配置 -->
-        <!--<snapshotRepository>
-            <id>maven-snapshots</id>
-            <url>http://nexus-tkn-cicd.apps.ocp4.yilipoc.com/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>-->
 </project>
