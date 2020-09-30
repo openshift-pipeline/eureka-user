@@ -3,7 +3,7 @@
 #ADD cloud-demo-eureka-user.jar eureka-user.jar
 #EXPOSE 8002
 #ENTRYPOINT ["java","-jar","/eureka-user.jar"]
-FROM image-registry.openshift-image-registry.svc:5000/openshift/maven as BUILD
+FROM image-registry.openshift-image-registry.svc:5000/openshift/maven:3.6.1-jdk-8-alpine as BUILD
 COPY src /usr/app/src
 COPY pom.xml /usr/app
 
